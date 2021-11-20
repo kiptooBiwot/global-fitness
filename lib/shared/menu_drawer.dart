@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:globo_fitness/screens/weather_screen.dart';
 import '../screens/bmi_screen.dart';
 import '../screens/intro_screen.dart';
 
@@ -52,6 +53,9 @@ class MenuDrawer extends StatelessWidget {
                 break;
               case 'BMI Calculator':
                 screen = const BmiScreen();
+                break;
+              case 'Weather':
+                screen = const WeatherScreen();
                 break;
             }
             Navigator.of(context).pop();
